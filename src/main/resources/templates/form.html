@@ -8,17 +8,17 @@
 <form action="#" th:action="@{/}" th:object="${personForm}" method="post">
     <table>
         <tr>
-            <td>Name:</td>
+            <td>Имя:</td>
             <td><input type="text" th:field="*{name}" /></td>
             <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</td>
         </tr>
         <tr>
-            <td>Age:</td>
+            <td>Возраст:</td>
             <td><input type="text" th:field="*{age}" /></td>
             <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}">Age Error</td>
         </tr>
         <tr>
-            <td><button type="submit">Submit</button></td>
+            <td><button type="submit">Войти</button></td>
         </tr>
     </table>
 </form>
